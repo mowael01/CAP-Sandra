@@ -1,5 +1,4 @@
 // ESP32 Code for capstone 2024 G12
-// Made by group 21316 Mohammed W., Ziad E., Mostafa A. in Obour STEM School
 
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
@@ -12,7 +11,7 @@
 // Put your supabase URL and Anon key here...
 String supabase_url = "https://ngzhzlfxjxkyladhvcop.supabase.co";
 String anon_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5nemh6bGZ4anhreWxhZGh2Y29wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzEzMzE2NzQsImV4cCI6MjA0NjkwNzY3NH0.wdvjm_Iaj7xIphja6G5cjsYkTmueZ6WBRnwSVSUWaPQ";
-String table = "Readings";
+String table = "readings";
 String JSON = "";
 
 Supabase db;
