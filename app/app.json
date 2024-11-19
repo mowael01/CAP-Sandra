@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "cap-app",
+    "name": "ClearSphere",
     "slug": "cap-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,7 +11,7 @@
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000d0e"
     },
     "ios": {
       "supportsTablet": true
@@ -20,7 +20,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mo_wael.capapp"
     },
     "web": {
       "bundler": "metro",
@@ -32,6 +33,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e252b1e7-020d-4850-ba0f-0a0ecc7f9d12"
+      }
+    },
+    "owner": "mo_wael"
   }
 }
