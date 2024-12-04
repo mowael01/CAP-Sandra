@@ -483,7 +483,7 @@ export default function TabOneScreen() {
               Temperature is safe
             </Text>
             <Text>
-              expected next reading:{" "}
+              Expected next reading:{" "}
               <Text
                 style={{
                   color: getColor(expectedTemperature, maxTemperature),
@@ -574,10 +574,7 @@ export default function TabOneScreen() {
               Current reading:{" "}
               <Text
                 style={{
-                  color: getColor(
-                    +expectedCO + +expectedCH4,
-                    maxAirQalityIndex
-                  ),
+                  color: getColor(airQualityIndex, maxAirQalityIndex),
                 }}>
                 {airQualityIndex}
               </Text>
@@ -586,10 +583,7 @@ export default function TabOneScreen() {
               expected next reading:{" "}
               <Text
                 style={{
-                  color: getColor(
-                    +expectedCO + +expectedCH4,
-                    maxAirQalityIndex
-                  ),
+                  color: getColor(airQualityIndex, maxAirQalityIndex),
                 }}>
                 {calculateAQI(
                   [
@@ -716,7 +710,7 @@ export default function TabOneScreen() {
             domainPadding={{ left: 20, right: 20, top: 0, bottom: 0 }}
             xKey="created_at"
             yKeys={["CH4"]}
-            domain={{ x: [1, 9], y: [0, 50] }}
+            domain={{ x: [1, 9], y: [0, 100] }}
             yAxis={[
               {
                 font,

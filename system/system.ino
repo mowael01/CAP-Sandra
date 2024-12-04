@@ -23,15 +23,17 @@ float temperature = 0.0,
       CH4 = 0.0;
 bool buzzer = false;
 // Wifi credentials
-const char *ssid = "Etisalat 4G Router-2629";
-const char *password = "2vh2nr68";
+const char *ssid = "Sandra";
+const char *password = "SMM@9988";
 
 #define DHTPIN 4 // Digital pin connected to the DHT sensor
 
 #define DHTTYPE DHT11 // DHT 11
 
 DHT_Unified dht(DHTPIN, DHTTYPE); // Initialize DHT sensor
-sensors_event_t event;            // used by the DHT
+sensors_event_t event;   // used by the DHT
+
+// MQ
 
 #define Board ("ESP-32") // Wemos ESP-32 or other board, whatever have ESP32 core.
 #define Pin1 (34)        // IO25 for your ESP32 WeMos Board, pinout here: https://i.pinimg.com/originals/66/9a/61/669a618d9435c702f4b67e12c40a11b8.jpg
@@ -49,7 +51,7 @@ MQUnifiedsensor MQ4(Board, Voltage_Resolution, ADC_Bit_Resolution, Pin2, Type2);
 
 // thresholds
 #define CO_THRESHOLD 3
-#define CH4_THRESHOLD 200
+#define CH4_THRESHOLD 5
 #define HUMIDITY_THRESHOLD 60
 #define TEMPERATURE_THRESHOLD 30
 

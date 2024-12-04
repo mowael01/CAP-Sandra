@@ -88,19 +88,19 @@ export default function TabTwoScreen() {
                 style={{
                   color: "black",
                 }}>
-                H: {item.humi}
+                H: {item.humi} %
               </Text>
               <Text
                 style={{
                   color: "black",
                 }}>
-                CO: {item.CO}
+                CO: {item.CO} ppm
               </Text>
               <Text
                 style={{
                   color: "black",
                 }}>
-                CH4: {item.CH4}
+                CH4: {item.CH4} ppm
               </Text>
             </View>
           </View>
