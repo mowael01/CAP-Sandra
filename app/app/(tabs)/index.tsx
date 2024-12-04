@@ -42,7 +42,7 @@ const exponentialSmoothing = (data: number[], alpha = 0.2) => {
 // Function to predict the next value based on the latest 100 readings
 const predictWithExponentialSmoothing = (latestReadings: number[]) => {
   if (latestReadings.length < 100) {
-    console.error("Insufficient data. Please provide at least 100 readings.");
+    console.log("Insufficient data. Please provide at least 100 readings.");
     return null;
   }
 
@@ -710,7 +710,7 @@ export default function TabOneScreen() {
             domainPadding={{ left: 20, right: 20, top: 0, bottom: 0 }}
             xKey="created_at"
             yKeys={["CH4"]}
-            domain={{ x: [1, 9], y: [0, 100] }}
+            domain={{ x: [1, 9], y: [0, 400] }}
             yAxis={[
               {
                 font,

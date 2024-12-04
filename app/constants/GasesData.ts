@@ -24,8 +24,8 @@ export const GasesBreakpoints = {
     { BPLo: 9.5, BPHi: 12.4, ILo: 101, IHi: 150 },
   ],
   CH4: [
-    { BPLo: 0, BPHi: 1.5, ILo: 0, IHi: 50 },
-    { BPLo: 1.6, BPHi: 3.0, ILo: 51, IHi: 100 },
-    { BPLo: 3.1, BPHi: 4.5, ILo: 101, IHi: 150 },
+    { BPLo: 0, BPHi: 50, ILo: 0, IHi: 50 },
+    { BPLo: 51, BPHi: 70, ILo: 51, IHi: 100 },
+    { BPLo: 70.1, BPHi: 300, ILo: 101, IHi: 150 },
   ],
 };

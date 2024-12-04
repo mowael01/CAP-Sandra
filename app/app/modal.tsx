@@ -138,7 +138,7 @@ export default function TabTwoScreen() {
               }}>
               Load More...
             </Text>
-          </TouchableOpacity>{" "}
+          </TouchableOpacity>
         </View>
       </View>
       <View style={{ height: 50 }}></View>
